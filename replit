@@ -1,0 +1,59 @@
+# Lisseth
+# Interactive Fiction
+# The story begins
+
+def nextline1():
+ print ("what color is the sun?\n(a) yelloworange\n(b) redorange\n Choose a or b.")
+ answer=raw_input()  
+ answer==answer.lower()
+ print ("\n" * 5)       # prints 5 return lines
+ if answer=="a":        # first decision logic
+   yelloworange()       # go to def named "wrong()"
+ elif answer=="b":      # second decision logic
+   redorange()          # go to def named "nextlinetwo()"
+   nextlinetwo()
+ else:
+   print ("you didn't enter an option\n")
+
+def introduction():
+ print ("hello\n")
+ print ("choose correct answer\n")
+ nextline1()            # a go-to command
+
+# Goes to def named "wrong()"
+def wrong():
+  print ("you chose the wrong answer, start over\n")
+  introduction()        # go to introduction()
+
+# Goes to def named "nextlinetwo()"
+def nextlinetwo():
+ print ("which contintent do we live in?\n(c) southamerica\n(d) europe\n(e)northamerica\n Choose c or d or e")
+ reply=raw_input()
+ reply==reply.lower()
+ print ("\n" * 8)
+ if reply=="c":         # 1 decision logic
+   southamerica()       # go to def named "wrong()"
+ elif reply=="d":       # 2 decision logic
+   europe()             # go to def named "wrong()"
+ elif reply=="e":       # 3 decision logic
+   northamerica()       # go to def named "tres()"
+
+# Goes to def named "tres()"
+def tres():
+ print ("how many oceans are there logically?\n(f) seven\n(g) five\n(h) one\n(i) nine\n Choose f or g or h or i")
+ response=raw_input()
+ response==response.lowerr()
+ print ("\n" * 10)
+ if response=="f":      # 1 decision logic
+   seven()              # go to def named "wrong()"
+  if response=="g":     # 2 decision logic
+   five()               # go to def named "wrong()"
+  if response=="h":     # 3 decision logic
+   one()                # go to def named "done()"
+  if response== "i":    # 4 decision logic
+   nine()               # go to def named "wrong()"
+
+def done():
+ print ("great job\n")
+
+introduction()
