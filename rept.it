@@ -1,0 +1,66 @@
+# Lisseth
+# Interactive Fiction
+# The story begins
+
+def introduction():
+ print ("hello\n")
+ print ("choose correct answer\n")
+ nextline01()        # a go-to command
+introduction()
+
+def nextline01():
+ print ("what color is the sun?\n(a) yelloworange\n(b) redorange\n Choose a or b.")
+ answer=raw_input()  
+ answer==answer.lower()
+ print ("\n" * 5)    # prints 5 return lines
+ if answer=="a":   # first decision logic
+   yelloworange()      # go to def named "wrong()"
+ elif answer=="b":   # second decision logic
+   redorange()     # go to def named "nextlinetwo()"
+   nextlinetwo()
+ else:
+   print ("you didn't enter an “a” or a “b”\n")
+  introduction()
+
+# Goes to def named "wrong()"
+def wrong():
+  print ("you chose the wrong answer, start over\n")
+  introduction()      # go to introduction()
+
+# Goes to def named "nextlinetwo()"
+def nextlinetwo():
+ print ("which contintent do we live in?\n(c) southamerica\n(d) europe\n(e)northamerica\n Choose c or d or e")
+ reply=raw_input()
+ reply==reply.lower()
+ print ("\n" * 8)
+ if answer=="c":   # first decision logic
+   southamerica()   # go to def named "wrong()"
+ elif answer=="d":   # second decision logic
+   europe()       # go to def named "wrong()"
+ elif answer=="e":   # third decision logic
+   northamerica()   # go to def named "tres()"
+tres()
+
+# Goes to def named "tres()"
+def tres():
+ print ("how many oceans are there logically?\n(f) seven\n(g) five\n(h) one\n(i) nine\n Choose f or g or h or i")
+ response=raw_input()
+ response==response.upper()
+ print ("\n" * 10)
+ if answer=="f":    # first decision logic
+   seven()             # go to def named "wrong()"
+wrong()
+ elif answer=="g":  # second decision logic
+   five()              # go to def named "wrong()"
+wrong()
+ elif answer=="h":   # third decision logic
+   one()               # go to def named "done()"
+done()
+ elif answer== "i":  # fourth decision logic
+   nine()              # go to def named "wrong()"
+wrong()
+
+def done():
+ print ("great job\n")
+
+introduction()
