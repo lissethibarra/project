@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<body>
 <body style="background-color:whitesmoke;">
 
 <h1 style="text-align:center;">Projects</h1>
