@@ -21,6 +21,3 @@
   <li><p><a href="https://drive.google.com/open?id=1XnogLDW2ASYnXvxl9AMVsn5UjylNXQbl&authuser=0">Written Response</a></p>
 </li>
 </ol> 
-
-</body>
-</html>
