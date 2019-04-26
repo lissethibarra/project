@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
 <body>
-<body style="background-color:whitesmoke;">
-
-<h1 style="text-align:center;">Projects</h1>
-
-<h2>Explore Project</h2>
 
 <ul>
-  <li><p><a href="https://drive.google.com/open?id=1aGdMAmmjcrE5T7i3Gkke23F4_mmuFjE7&authuser=0">Written Response</a></p></li>
-  <li><p><a href="https://drive.google.com/open?id=1DAw9e_hbfjqNO4V5nRVOy16csqH4HVME&authuser=0">Artifact</a></p></li>
-</ul>  
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About Me</a></li>
+</ul>
 
-<h2>Create Project</h2>
+<body style="background-color:whitesmoke;">
+
+<h1><ins>Projects</ins></h1>
+
+<h2><ins>Explore Project</ins></h2>
 
 <ol>
-  <li><p><a href="https://drive.google.com/open?id=0B68yrI42FX0heUJuNlRQYWp0MldFdVFKamtmaGNmSEpuenJZ&authuser=0">Code Working</a></p>
-</li>
-  <li><p><a href="https://drive.google.com/open?id=11UEukcvZyqXlOsP39AL-IOFSZgQgPIbZ&authuser=0">Code</a></p></li>
-  <li><p><a href="https://drive.google.com/open?id=1XnogLDW2ASYnXvxl9AMVsn5UjylNXQbl&authuser=0">Written Response</a></p>
-</li>
+  <p><a href="https://drive.google.com/open?id=1aGdMAmmjcrE5T7i3Gkke23F4_mmuFjE7&authuser=0">Written Response</a></p>
+  <p><a href="https://drive.google.com/open?id=1DAw9e_hbfjqNO4V5nRVOy16csqH4HVME&authuser=0">Artifact</a></p> 
+
+<h2><ins>Create Project</ins></h2>
+
+<ol>
+  <p><a href="https://drive.google.com/open?id=0B68yrI42FX0heUJuNlRQYWp0MldFdVFKamtmaGNmSEpuenJZ&authuser=0">Code Working</a></p>
+  <p><a href="https://drive.google.com/open?id=11UEukcvZyqXlOsP39AL-IOFSZgQgPIbZ&authuser=0">Code</a></p>
+  <p><a href="https://drive.google.com/open?id=1XnogLDW2ASYnXvxl9AMVsn5UjylNXQbl&authuser=0">Written Response</a></p>
 </ol> 
 
 </body>
